@@ -4,7 +4,7 @@
     "strip_prefix": "lz4-1.10.0",
     "overlay": {
         "BUILD.bazel": "sha256-b7f72faa60220406872294252f74beca81c741b59ddcb9e1d73947289b29c183",
-        "MODULE.bazel": "sha256-701a49c6304d1f836604dbfbb1642a0c89320c8bd2fbe5a768ae97b48c8df1d4",
+        "MODULE.bazel": "sha256-bf2d9ac92dd3b792e514ca412965d78863ba3a05344c77f4109b4daa8dd81dab",
         "programs/BUILD.bazel": "sha256-e9f1991a8226d5a7260647adbf58d39552cc03e4fce664ec8a7a19681371c2fb"
     },
     "patch_strip": 0
