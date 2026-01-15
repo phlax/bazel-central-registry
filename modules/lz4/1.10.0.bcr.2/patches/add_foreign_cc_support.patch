@@ -1,0 +1,47 @@
+--- BUILD.bazel
++++ BUILD.bazel
+@@ -1,4 +1,4 @@
+-load("@rules_cc//cc:defs.bzl", "cc_library")
++load("@rules_cc//cc:defs.bzl", "cc_library", "filegroup")
+ 
+ cc_library(
+     name = "lz4",
+@@ -80,3 +80,34 @@
+     strip_include_prefix = "lib/",
+     visibility = ["//:__subpackages__"],
+ )
++
++# Static library combining all lz4 components for foreign_cc consumers
++cc_library(
++    name = "lz4_static",
++    srcs = [
++        "lib/lz4.c",
++        "lib/lz4hc.c",
++        "lib/lz4frame.c",
++        "lib/xxhash.c",
++        "lib/xxhash.h",
++        "lib/lz4frame_static.h",
++    ],
++    hdrs = [
++        "lib/lz4.h",
++        "lib/lz4hc.h",
++        "lib/lz4frame.h",
++    ],
++    strip_include_prefix = "lib/",
++    linkstatic = True,
++    visibility = ["//visibility:public"],
++)
++
++# Wrapper providing CcInfo for foreign_cc deps
++cc_library(
++    name = "lz4_foreign",
++    deps = [":lz4_static"],
++    visibility = ["//visibility:public"],
++)
++
++# All sources for rules_foreign_cc lib_source
++filegroup(
++    name = "all",
++    srcs = glob(["**"]),
++    visibility = ["//visibility:public"],
++)
