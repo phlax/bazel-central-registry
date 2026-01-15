@@ -2,7 +2,8 @@
     "integrity": "sha256-nedY23VegzCgHZlbCiTQl5gEhACsJcA/xeqb42SxPJM=",
     "strip_prefix": "boost_1_89_0",
     "url": "https://archives.boost.io/release/1.89.0/source/boost_1_89_0.tar.gz",
-    "overlay": {
-        "BUILD.bazel": "sha256-wh7x1X/473OrG2Rc+0cWAY4QqK9ej/5cmAZqgqDD4wI="
-    }
+    "patches": {
+        "add_build_file.patch": "sha256-y52yfVZqyUmNX/Pwp/xTELyr+USnpmDByizgMKXbv/c="
+    },
+    "patch_strip": 0
 }
