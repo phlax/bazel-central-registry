@@ -3,12 +3,9 @@
     "integrity": "sha256-U3USkEdEs14jKRIFXM+Oxm12hjn/Or5XiNkNeS7F9Is=",
     "strip_prefix": "lz4-1.10.0",
     "overlay": {
-        "BUILD.bazel": "sha256-HNrLtloE1eD6pd22kXPuHVI7XC48djegLwQANJX5S08=",
-        "MODULE.bazel": "sha256-cBpJxjBNH4NmBNv7sWQqDIkyDIvS++WnaK6XtIyN8dQ=",
-        "programs/BUILD.bazel": "sha256-6fGZGoIm1acmBketv1jTlVLMA+T85mTsinoZaBNxwvs="
-    },
-    "patches": {
-        "add_foreign_cc_support.patch": "sha256-YBCdES/me8IZYhd2hpDmvl170U6FLwYp5EdojmQx1H4="
+        "BUILD.bazel": "sha256-b7f72faa60220406872294252f74beca81c741b59ddcb9e1d73947289b29c183",
+        "MODULE.bazel": "sha256-701a49c6304d1f836604dbfbb1642a0c89320c8bd2fbe5a768ae97b48c8df1d4",
+        "programs/BUILD.bazel": "sha256-e9f1991a8226d5a7260647adbf58d39552cc03e4fce664ec8a7a19681371c2fb"
     },
     "patch_strip": 0
 }
