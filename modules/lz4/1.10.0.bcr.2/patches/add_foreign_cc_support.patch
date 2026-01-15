@@ -6,10 +6,10 @@
  
  cc_library(
      name = "lz4",
-@@ -80,3 +80,34 @@
-     strip_include_prefix = "lib/",
+@@ -80,3 +80,38 @@
      visibility = ["//:__subpackages__"],
  )
+ 
 +
 +# Static library combining all lz4 components for foreign_cc consumers
 +cc_library(
