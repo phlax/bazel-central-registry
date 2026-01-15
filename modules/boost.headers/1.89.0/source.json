@@ -1,5 +1,5 @@
 {
-    "integrity": "sha256-VavdyCmBZCmSDM1hZUYQPzkcSXcEkPDSdBbAHEyBE1M=",
-    "strip_prefix": "boost-boost-1.89.0",
-    "url": "https://github.com/boostorg/boost/archive/refs/tags/boost-1.89.0.tar.gz"
+    "integrity": "sha256-nedY23VegzCgHZlbCiTQl5gEhACsJcA/xeqb42SxPJM=",
+    "strip_prefix": "boost_1_89_0",
+    "url": "https://archives.boost.io/release/1.89.0/source/boost_1_89_0.tar.gz"
 }

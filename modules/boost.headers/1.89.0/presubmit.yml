@@ -18,4 +18,4 @@ tasks:
     bazel: ${{ bazel }}
     build_targets:
     - '@boost.headers//:files'
-    - '@boost.headers'
+    - '@boost.headers//:boost.headers'
