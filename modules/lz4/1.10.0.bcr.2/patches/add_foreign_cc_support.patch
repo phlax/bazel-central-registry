@@ -1,11 +1,5 @@
 --- BUILD.bazel
 +++ BUILD.bazel
-@@ -1,4 +1,4 @@
--load("@rules_cc//cc:defs.bzl", "cc_library")
-+load("@rules_cc//cc:defs.bzl", "cc_library", "filegroup")
- 
- cc_library(
-     name = "lz4",
 @@ -80,3 +80,38 @@
      visibility = ["//:__subpackages__"],
  )
@@ -45,3 +39,4 @@
 +    srcs = glob(["**"]),
 +    visibility = ["//visibility:public"],
 +)
+

@@ -8,7 +8,7 @@
         "programs/BUILD.bazel": "sha256-6fGZGoIm1acmBketv1jTlVLMA+T85mTsinoZaBNxwvs="
     },
     "patches": {
-        "add_foreign_cc_support.patch": "sha256-P3BtX/5Zio/MjbeHe6IG720WkJveytvxDgEp8alABmk="
+        "add_foreign_cc_support.patch": "sha256-YBCdES/me8IZYhd2hpDmvl170U6FLwYp5EdojmQx1H4="
     },
     "patch_strip": 0
 }
